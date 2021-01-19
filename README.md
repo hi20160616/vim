@@ -1,3 +1,28 @@
+# coc-nvim
+
+目前已全面转向该插件，感谢国人大神贡献！！
+
+内置的CocList 提供一些模糊查找路径，大纲，符号表等 取代了 fzf等同类插件；
+
+coc-explorer 取代了 NERDTree，defx；
+
+coc-pairs 取代了 autopairs；
+
+coc-smartf 取代了 vim-easymotion；
+
+coc-highlight 取代了 vim-cursorline，并提供了颜色板功能（不知道怎么描述，就是可以像ide一样在描述颜色的地方弹出调色窗口
+
+coc-java/ccls/rls 取代了那堆各有缺点的补全插件，
+
+coc-pyright 提供 python 静态类型检查，如果遇到问题（比如我），很大概率是因为该升级到最新的没有升级到最新  
+……  
+配置也没那么复杂，引入新的配置文件 全局/局部coc-settings.json,就像vscode那样，安装 `coc-json` 后提供完整的设置模糊补全，
+
+而这些插件只需要在ex中 :CocInstall 插件名 即可
+
+你甚至可以安装 coc-marketplace 搜索安装更多插件
+
+
 # For Mac OS X Macvim
 
 ```
@@ -81,22 +106,3 @@ robocopy ~\vimfiles\colors colors *
 
 coc-nvim 还是很推荐的，确实如其作者大大所说，给人以vscode一般的体验
 
-内置的CocList 提供一些模糊查找路径，大纲，符号表等 取代了 fzf等同类插件；
-
-coc-explorer 取代了 NERDTree，defx；
-
-coc-pairs 取代了 autopairs；
-
-coc-smartf 取代了 vim-easymotion；
-
-coc-highlight 取代了 vim-cursorline，并提供了颜色板功能（不知道怎么描述，就是可以像ide一样在描述颜色的地方弹出调色窗口
-
-coc-java/ccls/rls 取代了那堆各有缺点的补全插件，
-
-coc-pyright 提供 python 静态类型检查，如果遇到问题（比如我），很大概率是因为该升级到最新的没有升级到最新  
-……  
-配置也没那么复杂，引入新的配置文件 全局/局部coc-settings.json,就像vscode那样，安装 `coc-json` 后提供完整的设置模糊补全，
-
-而这些插件只需要在ex中 :CocInstall 插件名 即可
-
-你甚至可以安装 coc-marketplace 搜索安装更多插件
