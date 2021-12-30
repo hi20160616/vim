@@ -22,6 +22,32 @@ coc-pyright 提供 python 静态类型检查，如果遇到问题（比如我）
 
 你甚至可以安装 coc-marketplace 搜索安装更多插件
 
+## How to edit coc config
+Just type <kbd>:</kbd> and run `CocConfig` in vim, my settings:
+```
+{
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "gosnippets/UltiSnips"
+  ],
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": [
+	"go.mod",
+	".vim/",
+	".git/",
+	".hg/"
+      ],
+      "filetypes": [
+	"go"
+      ]
+    }
+  },
+  "explorer.icon.enableNerdfont": true
+}
+```
+
 
 # For Mac OS X Macvim
 
