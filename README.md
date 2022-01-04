@@ -48,6 +48,21 @@ Just type <kbd>:</kbd> and run `CocConfig` in vim, my settings:
 }
 ```
 
+## My go snippet
+```
+snippet irt "if error not nil, return err"
+	if err != nil {
+		t.Fatal(err)
+	}
+	${0}
+
+snippet ir2 "if error not nil, return err"
+	if err != nil {
+		return nil, err
+	}
+	${0}
+```
+
 
 # For Mac OS X Macvim
 
