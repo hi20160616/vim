@@ -57,7 +57,7 @@ snippet errtf "if error not nil, return test.Fatal"
 	}${0}
 
 
-snippet errre "if error not nil, return err"
+snippet errr1 "if error not nil, return err"
 	if err != nil {
 		return err
 	}
