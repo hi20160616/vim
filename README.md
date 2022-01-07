@@ -49,6 +49,7 @@ Just type <kbd>:</kbd> and run `CocConfig` in vim, my settings:
 ```
 
 ## My go snippet
+`.vim/plugged/vim-snippets/snippets/go.snippets`:
 ```
 snippet errtf "if error not nil, return test.Fatal"
 	if err != nil {
