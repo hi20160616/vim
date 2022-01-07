@@ -65,14 +65,14 @@ snippet errre "if error not nil, return err"
 
 snippet errr2 "if error not nil, return nil, err"
 	if err != nil {
-		return ${0:nil}, err
-	}
+		return ${1:nil}, err
+	}${0}
 
 
 snippet errrc "If err of condition not nil, deal it yourself"
 	if err := ${1:condition}; err != nil {
-		${0:${VISUAL}}
-	}
+		${2:${VISUAL}}
+	}${0}
 ```
 
 
