@@ -50,17 +50,28 @@ Just type <kbd>:</kbd> and run `CocConfig` in vim, my settings:
 
 ## My go snippet
 ```
-snippet irt "if error not nil, return err"
+snippet errtf "if error not nil, return test.Fatal"
 	if err != nil {
 		t.Fatal(err)
-	}
-	${0}
+	}${0}
 
-snippet ir2 "if error not nil, return err"
+
+snippet errre "if error not nil, return err"
 	if err != nil {
-		return nil, err
+		return err
 	}
-	${0}
+
+
+snippet errr2 "if error not nil, return nil, err"
+	if err != nil {
+		return ${0:nil}, err
+	}
+
+
+snippet errrc "If err of condition not nil, deal it yourself"
+	if err := ${1:condition}; err != nil {
+		${0:${VISUAL}}
+	}
 ```
 
 
