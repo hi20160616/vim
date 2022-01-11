@@ -65,7 +65,7 @@ snippet errr1 "if error not nil, return err"
 
 snippet errr2 "if error not nil, return nil, err"
 	if err != nil {
-		return ${1:nil}, err
+		return nil, ${1:err}
 	}${0}
 
 
