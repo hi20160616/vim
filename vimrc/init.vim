@@ -17,9 +17,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Plug 'mhinz/vim-startify'
 Plug 'junegunn/vim-easy-align'
-Plug 'jiangmiao/auto-pairs'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
-Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
+" Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'preservim/nerdcommenter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'honza/vim-snippets'
@@ -29,10 +28,11 @@ Plug 'skywind3000/quickmenu.vim'
 Plug 'skywind3000/asyncrun.vim'
 "------------------------------------韦一笑------------------------------
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-Plug 'majutsushi/tagbar'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rhysd/vim-clang-format'
-" Plug 'puremourning/vimspector'
+Plug 'majutsushi/tagbar'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'tell-k/vim-autopep8'
 " Initialize plugin system
 call plug#end()
 
@@ -487,8 +487,7 @@ let g:NERDToggleCheckAllLines = 1
 " -----------------------------------------------
 " :norenmap <>
 " map <c-n> :NERDTreeToggle<CR>
-noremap <F3> :NERDTreeToggle<CR>
-inoremap <F3> <ESC>:NERDTreeToggle<CR>
+noremap <F3> :CocCommand explorer<CR>
 autocmd VimEnter * wincmd p
 
 
