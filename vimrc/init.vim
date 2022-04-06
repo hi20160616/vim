@@ -623,3 +623,4 @@ let g:coc_snippet_next = '<tab>'
 let g:tagbar_width=30
 " 映射Tagbar的快捷键,按F8自动打开
 map <F8> :TagbarToggle<CR>
+autocmd CursorHold * silent call CocActionAsync('highlight')
