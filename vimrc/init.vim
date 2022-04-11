@@ -591,3 +591,9 @@ let g:tagbar_width=30
 " 映射Tagbar的快捷键,按F8自动打开
 map <F8> :TagbarToggle<CR>
 autocmd CursorHold * silent call CocActionAsync('highlight')
+" Figure out the system Python for Neovim.
+if exists("$VIRTUAL_ENV")
+    let g:python3_host_prog=substitute(system("which -a python3 | head -n2 | tail -n1"), "\n", '', 'g')
+else
+    let g:python3_host_prog=substitute(system("which python3"), "\n", '', 'g')
+endif
