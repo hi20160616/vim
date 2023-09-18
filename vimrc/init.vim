@@ -146,7 +146,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7" " 其他模式还是粗光标
 
 
 " 设置空白字符的视觉提示
-set list listchars=extends:❯,precedes:❮,tab:▸\ ,trail:˽
+" set list listchars=extends:❯,precedes:❮,tab:▸\ ,trail:˽
 set cursorline
 set relativenumber
 " set number
@@ -597,3 +597,5 @@ if exists("$VIRTUAL_ENV")
 else
     let g:python3_host_prog=substitute(system("which python3"), "\n", '', 'g')
 endif
+
+let g:rustfmt_autosave = 1
