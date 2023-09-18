@@ -33,6 +33,7 @@ Plug 'rhysd/vim-clang-format'
 Plug 'majutsushi/tagbar'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'tell-k/vim-autopep8'
+Plug 'rust-lang/rust.vim'
 " Initialize plugin system
 call plug#end()
 
